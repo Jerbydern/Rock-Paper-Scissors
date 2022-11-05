@@ -1,14 +1,12 @@
-<!DOCTYPE html>
-<html lang=en>
-	<head>
-		<meta charset="utf-8">
-		<title>Rock Paper Scissors</title>
-	</head>
+//Rock Paper Scissors
 
-	<body>
+function compChoice() {
+	choices = ['Rock','Paper','Scissors']
+	dex = Math.floor(Math.random() * 3)
+	return choices[dex]
+}
 
-	</body>
-	<script src = 'RPS.js'>
+function round(playerSel, compSel) {
+	prompt('Make your choice', 'rock')
+}
 
-	</script>
-</html>
