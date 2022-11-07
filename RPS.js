@@ -1,5 +1,7 @@
 //Rock Paper Scissors
 
+let buttons = document.querySelectorAll('button');
+
 function compChoice() {
 	choices = ['rock','paper','scissors']
 	dex = Math.floor(Math.random() * 3)
@@ -43,12 +45,21 @@ function round(playerSel, compSel) {
 	}
 }
 
-function game() {
+buttons.forEach((button) => {
+	button.addEventListener('click', () => {
+		console.log(round(button.id, compChoice()))
+	})
+})
+
+
+
+
+/*function game() {
 	for (let i = 0 ; i < 5 ; i++) {
 		result = round(prompt('Make your choice', 'Rock'), compChoice())
 		console.log("Round " + (i + 1) + ": " + result)
 	}
 }
-game()
+game() */
 
 
