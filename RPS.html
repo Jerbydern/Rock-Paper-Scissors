@@ -6,11 +6,34 @@
 	</head>
 
 	<body>
-		<button id="rock">Rock</button>
-		<button id="paper">Paper</button>
-		<button id="scissors">Scissors</button>
+		<h1 style="text-align:center;">Rock Paper Scissors</h1>
+		<div class="buttonBox" style="display:flex; justify-content:center;">
+			<button id="rock">Rock</button>
+			<button id="paper">Paper</button>
+			<button id="scissors">Scissors</button>
+		</div>
+		<div style = 'display:flex;justify-content: center;'>
+			<h1 id = playerScoreDisp>0</h1>
+			<div class = 'outcome' style = 'min-height:100px;margin:10px;min-width:300px'></div>
+			<h1 id = compScoreDisp>0</h1>
+		</div>
 	</body>
 	<script src = 'RPS.js'>
 
 	</script>
+	<style>
+		.buttonBox button {
+			max-width:70px;
+			margin: 10px;
+
+		}
+
+		.outcome {
+			border: 2px solid black;
+			padding:3px
+		}
+
+
+
+	</style>
 </html>
